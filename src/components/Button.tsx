@@ -8,6 +8,7 @@ interface ButtonProps {
   title: string;
   isBlue?: boolean;
   isGray?: boolean;
+  more?: boolean;
 }
 
 export default function Button({
@@ -15,6 +16,7 @@ export default function Button({
   onPress,
   isBlue,
   isGray,
+  more,
 }: ButtonProps) {
   const theme = useContext(Tema);
   return (
@@ -34,6 +36,8 @@ export default function Button({
         style={
           isBlue || isGray
             ? Styles.smallTextLight
+            : more
+            ? Styles.more
             : theme === "dark"
             ? Styles.smallTextLight
             : Styles.smallTextDark

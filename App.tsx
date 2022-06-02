@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SafeAreaView, StyleSheet, Switch, Text } from "react-native";
+import { SafeAreaView, StyleSheet, Switch } from "react-native";
 import { colors } from "./src/styles/colors";
 import { Tema } from "./src/context/Tema";
 import Keyboard from "./src/components/Keyboard";
@@ -31,5 +31,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.light,
     alignItems: "center",
     justifyContent: "flex-start",
+    marginTop: 20,
   },
 });

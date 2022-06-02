@@ -54,20 +54,25 @@ export const Styles = StyleSheet.create({
   },
   viewBottom: {
     position: "absolute",
-    bottom: 50,
+    bottom: 10,
   },
   screenFirstNumber: {
-    fontSize: 96,
+    fontSize: 70,
     color: colors.gray,
     fontWeight: "200",
-    alignSelf: "center",
+
+    alignSelf: "flex-end",
   },
   screenSecondNumber: {
     fontSize: 40,
     color: colors.gray,
-
     fontWeight: "200",
-    marginRight: 10,
-    alignSelf: "center",
+    marginRight: 40,
+
+    alignSelf: "flex-end",
+  },
+  more: {
+    fontSize: 14,
+    fontWeight: "bold",
   },
 });
