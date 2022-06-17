@@ -75,4 +75,9 @@ export const Styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "bold",
   },
+  moreDark: {
+    fontSize: 14,
+    fontWeight: "bold",
+    color: colors.white,
+  },
 });

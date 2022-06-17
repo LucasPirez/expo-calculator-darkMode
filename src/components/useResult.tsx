@@ -6,37 +6,30 @@ export default function useResult(a: string, b: string, indicator: string) {
   useEffect(() => {
     switch (indicator) {
       case "+":
-        // clear();
         setFirst(
           ((parseFloat(b) * 100 + parseFloat(a) * 100) / 100).toString()
         );
 
         break;
       case "-":
-        // clear();
-
         setFirst(
           ((parseFloat(b) * 100 - parseFloat(a) * 100) / 100).toString()
         );
 
         break;
       case "*":
-        // clear();
         setFirst((parseFloat(b) * parseFloat(a)).toString());
 
         break;
       case "/":
-        // clear();
         setFirst((parseFloat(b) / parseFloat(a)).toString());
 
         break;
       case "^":
-        // clear();
         setFirst(Math.pow(parseFloat(b), parseFloat(a)).toString());
         break;
 
       case "％":
-        // clear();
         setFirst(((parseFloat(a) * parseFloat(b)) / 100).toString());
 
         break;
@@ -51,7 +44,6 @@ export default function useResult(a: string, b: string, indicator: string) {
         setFirst(num.toString());
         break;
       default:
-        // clear();
         setFirst("0");
         break;
     }

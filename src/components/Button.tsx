@@ -32,19 +32,23 @@ export default function Button({
       }
       onPress={onPress}
     >
-      <Text
-        style={
-          isBlue || isGray
-            ? Styles.smallTextLight
-            : more
-            ? Styles.more
-            : theme === "dark"
-            ? Styles.smallTextLight
-            : Styles.smallTextDark
-        }
-      >
-        {title}
-      </Text>
+      {more ? (
+        <Text style={[theme === "dark" ? Styles.moreDark : Styles.more]}>
+          {title}
+        </Text>
+      ) : (
+        <Text
+          style={[
+            isBlue || isGray
+              ? Styles.smallTextLight
+              : theme === "dark"
+              ? Styles.smallTextLight
+              : Styles.smallTextDark,
+          ]}
+        >
+          {title}
+        </Text>
+      )}
     </TouchableOpacity>
   );
 }
